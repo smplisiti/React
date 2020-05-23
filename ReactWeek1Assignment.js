@@ -12,4 +12,21 @@ class Bootcamp {
         this.level = level;
         this.students = students;
     }
+
+    registerStudent(student) {
+        const studentAlreadyRegistered = this.student.filter(
+            (s) => s.email === student.email
+            ).length;
+
+        if (studentAlreadyRegistered) {
+            console.log(`The student with ${student.email} is already registered`);
+    }
+
+        else {
+            this.student.push(student);
+            console.log(`${student.email} is registered to ${this.name}`);
+    }
+        return this.students;
+   
+    }
 }
