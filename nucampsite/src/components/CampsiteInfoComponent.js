@@ -40,8 +40,11 @@ export default class CampsiteInfo extends Component {
   render() {
     const { campsite } = this.props;
     return campsite ? (
+      <div className="container">
       <div className="row">
-        {this.renderCampsite(campsite)} {this.renderComments(campsite.comments)}
+        {this.renderCampsite(campsite)} 
+        {this.renderComments(campsite.comments)}
+      </div>
       </div>
     ) : (
       <div />
