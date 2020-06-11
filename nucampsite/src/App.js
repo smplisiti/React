@@ -17,13 +17,11 @@ class App extends Component {
           </div>
         </BrowserRouter>
       </Provider>
-          <BrowserRouter>
-          <div className="App">
-              <Main />
-          </div>
-          </BrowserRouter>
+          
+  
       );
-  };
+  
+  }
 }
 
 export default App;
