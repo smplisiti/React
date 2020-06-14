@@ -59,7 +59,7 @@ render() {
           <Route
             exact
             path="/directory"
-            render={() => <Directory campsites={this.state.campsites} />}
+            render={() => <Directory campsites={this.props.campsites} />}
           />
           <Route path="/directory/:campsiteId" component={CampsiteWithId} />
           <Route
