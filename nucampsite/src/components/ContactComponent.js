@@ -9,12 +9,7 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Control, LocalForm, Errors} from 'react-redux-form';
-
-const required = val => val && val.length;
-const maxLength = len => val => !val || (val.length <= len);
-const minLength = len => val => val && (val.length >= len);
-const isNumber = val => !isNaN(+val);
-const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+import {required, minLength, maxLength, isNumber, validEmail} from "../shared/validation";
 
 
 
